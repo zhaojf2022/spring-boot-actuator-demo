@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 public class SampleController {
+    Random random = new Random();
 
     @GetMapping("/")
     public String sayHello(@RequestParam(value = "name", defaultValue = "Guest") String name) {
@@ -16,9 +17,8 @@ public class SampleController {
     }
 
     @GetMapping("/slowApi")
-    public String timeConsumingAPI(@RequestParam(value = "delay", defaultValue = "0") Integer delay) throws InterruptedException {
+    public String timeConsumingApi(@RequestParam(value = "delay", defaultValue = "0") Integer delay) throws InterruptedException {
         if(delay == 0) {
-            Random random = new Random();
             delay = random.nextInt(10);
         }
 

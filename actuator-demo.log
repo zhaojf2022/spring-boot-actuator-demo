@@ -1,0 +1,174 @@
+2024-07-09T16:21:03.256+08:00  INFO 76860 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 76860 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T16:21:03.262+08:00  INFO 76860 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T16:21:04.725+08:00  INFO 76860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T16:21:04.734+08:00  INFO 76860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T16:21:04.734+08:00  INFO 76860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T16:21:04.783+08:00  INFO 76860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T16:21:04.784+08:00  INFO 76860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1433 ms
+2024-07-09T16:21:05.452+08:00  INFO 76860 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T16:21:05.530+08:00  INFO 76860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T16:21:05.552+08:00  INFO 76860 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.854 seconds (process running for 3.463)
+2024-07-09T16:21:06.096+08:00  INFO 76860 --- [RMI TCP Connection(3)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T16:21:06.104+08:00  INFO 76860 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T16:21:06.112+08:00  INFO 76860 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-09T16:26:42.266+08:00  WARN 76860 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type '*/*;charset=UTF-8' is not supported]
+2024-07-09T16:26:56.495+08:00  WARN 76860 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type '*/*;charset=UTF-8' is not supported]
+2024-07-09T16:27:53.731+08:00  WARN 76860 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type '*/*;charset=UTF-8' is not supported]
+2024-07-09T16:28:04.056+08:00  WARN 76860 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type '*/*;charset=UTF-8' is not supported]
+2024-07-09T16:28:25.277+08:00 DEBUG 76860 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-07-09T16:28:25.280+08:00 DEBUG 76860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-07-09T16:28:25.283+08:00 DEBUG 76860 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:789) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-09T16:28:25.290+08:00 DEBUG 76860 --- [http-nio-8080-exec-2] o.apache.coyote.http11.Http11Processor   : Error state [CLOSE_CONNECTION_NOW] reported while processing request
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:789) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-09T16:28:31.084+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/actuator/loggers/ROOT", parameters={}
+2024-07-09T16:28:31.089+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped to Actuator web endpoint 'loggers-name'
+2024-07-09T16:28:31.090+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/octet-stream" to []
+2024-07-09T16:28:31.092+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2024-07-09T16:28:31.093+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [org.springframework.boot.actuate.logging.LoggersEndpoint$SingleLoggerLevelsDescriptor@3e2180f7]
+2024-07-09T16:28:31.094+08:00 DEBUG 76860 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-07-09T16:28:31.096+08:00 DEBUG 76860 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:789) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-09T16:28:31.097+08:00 DEBUG 76860 --- [http-nio-8080-exec-4] o.apache.coyote.http11.Http11Processor   : Error state [CLOSE_CONNECTION_NOW] reported while processing request
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1293) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1181) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:789) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:348) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:262) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-07-09T16:28:41.433+08:00 DEBUG 76860 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/actuator/loggers/ROOT", parameters={}
+2024-07-09T16:28:41.434+08:00 DEBUG 76860 --- [http-nio-8080-exec-5] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped to Actuator web endpoint 'loggers-name'
+2024-07-09T16:28:41.436+08:00 DEBUG 76860 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [{configuredLevel=INFO}]
+2024-07-09T16:35:08.772+08:00  INFO 77653 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 77653 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T16:35:08.775+08:00  INFO 77653 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T16:35:10.172+08:00  INFO 77653 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T16:35:10.180+08:00  INFO 77653 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T16:35:10.181+08:00  INFO 77653 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T16:35:10.224+08:00  INFO 77653 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T16:35:10.225+08:00  INFO 77653 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1359 ms
+2024-07-09T16:35:10.895+08:00  INFO 77653 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T16:35:10.969+08:00  INFO 77653 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T16:35:10.988+08:00  INFO 77653 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.747 seconds (process running for 3.343)
+2024-07-09T16:35:11.617+08:00  INFO 77653 --- [RMI TCP Connection(3)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T16:35:11.626+08:00  INFO 77653 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T16:35:11.630+08:00  INFO 77653 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-09T16:48:24.721+08:00  INFO 78299 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 78299 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T16:48:24.725+08:00  INFO 78299 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T16:48:26.095+08:00  INFO 78299 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T16:48:26.103+08:00  INFO 78299 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T16:48:26.103+08:00  INFO 78299 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T16:48:26.149+08:00  INFO 78299 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T16:48:26.150+08:00  INFO 78299 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2024-07-09T16:48:26.847+08:00  INFO 78299 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T16:48:26.912+08:00  INFO 78299 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T16:48:26.932+08:00  INFO 78299 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.766 seconds (process running for 3.414)
+2024-07-09T16:48:27.499+08:00  INFO 78299 --- [RMI TCP Connection(3)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T16:48:27.501+08:00  INFO 78299 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T16:48:27.503+08:00  INFO 78299 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-09T16:49:26.994+08:00  INFO 78349 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 78349 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T16:49:26.998+08:00  INFO 78349 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T16:49:28.364+08:00  INFO 78349 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T16:49:28.372+08:00  INFO 78349 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T16:49:28.372+08:00  INFO 78349 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T16:49:28.417+08:00  INFO 78349 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T16:49:28.418+08:00  INFO 78349 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
+2024-07-09T16:49:29.095+08:00  INFO 78349 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T16:49:29.164+08:00  INFO 78349 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T16:49:29.186+08:00  INFO 78349 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.735 seconds (process running for 3.364)
+2024-07-09T16:49:29.782+08:00  INFO 78349 --- [RMI TCP Connection(3)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T16:49:29.787+08:00  INFO 78349 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T16:49:29.788+08:00  INFO 78349 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-09T17:05:35.396+08:00  INFO 79147 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 79147 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T17:05:35.400+08:00  INFO 79147 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:05:36.716+08:00  INFO 79147 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T17:05:36.723+08:00  INFO 79147 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:05:36.723+08:00  INFO 79147 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:05:36.769+08:00  INFO 79147 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:05:36.770+08:00  INFO 79147 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1283 ms
+2024-07-09T17:05:37.420+08:00  INFO 79147 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T17:05:37.488+08:00  INFO 79147 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T17:05:37.505+08:00  INFO 79147 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.674 seconds (process running for 3.306)
+2024-07-09T17:05:37.661+08:00  INFO 79147 --- [RMI TCP Connection(3)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T17:05:37.664+08:00  INFO 79147 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T17:05:37.665+08:00  INFO 79147 --- [RMI TCP Connection(3)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-09T17:10:14.963+08:00  INFO 79363 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 79363 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T17:10:14.967+08:00  INFO 79363 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:10:16.319+08:00  INFO 79363 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T17:10:16.327+08:00  INFO 79363 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:10:16.327+08:00  INFO 79363 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:10:16.369+08:00  INFO 79363 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:10:16.370+08:00  INFO 79363 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1310 ms
+2024-07-09T17:10:17.029+08:00  INFO 79363 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T17:10:17.103+08:00  INFO 79363 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T17:10:17.121+08:00  INFO 79363 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.712 seconds (process running for 3.349)
+2024-07-09T17:10:17.752+08:00  INFO 79363 --- [RMI TCP Connection(2)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T17:10:17.758+08:00  INFO 79363 --- [RMI TCP Connection(2)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T17:10:17.762+08:00  INFO 79363 --- [RMI TCP Connection(2)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-09T17:37:56.364+08:00  INFO 80871 --- [main] c.e.a.ActuatorDemoApplication            : Starting ActuatorDemoApplication using Java 17.0.11 with PID 80871 (/Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/target/classes started by jianfengzhao in /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo)
+2024-07-09T17:37:56.367+08:00  INFO 80871 --- [main] c.e.a.ActuatorDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:37:57.749+08:00  INFO 80871 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T17:37:57.756+08:00  INFO 80871 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:37:57.757+08:00  INFO 80871 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:37:57.801+08:00  INFO 80871 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:37:57.801+08:00  INFO 80871 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+2024-07-09T17:37:58.462+08:00  INFO 80871 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-07-09T17:37:58.531+08:00  INFO 80871 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T17:37:58.557+08:00  INFO 80871 --- [main] c.e.a.ActuatorDemoApplication            : Started ActuatorDemoApplication in 2.78 seconds (process running for 3.553)
+2024-07-09T17:37:58.777+08:00  INFO 80871 --- [RMI TCP Connection(2)-192.168.50.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T17:37:58.781+08:00  INFO 80871 --- [RMI TCP Connection(2)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T17:37:58.785+08:00  INFO 80871 --- [RMI TCP Connection(2)-192.168.50.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

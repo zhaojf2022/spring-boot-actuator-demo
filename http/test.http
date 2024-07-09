@@ -1,0 +1,52 @@
+### 测试接口
+GET http://localhost:8080/
+
+### 延时Api接口
+GET http://localhost:8080/slowApi?delay=3
+
+### Actuator支持的所有监控接口
+GET http://localhost:8080/actuator
+
+### 关闭服务接口
+POST http://localhost:8080/actuator/shutdown
+
+### 查看Spring中Bean的装配情况
+GET http://localhost:8080/actuator/beans
+
+### 显示应用程序的有关信息
+GET http://localhost:8080/actuator/info
+
+### 服务健康监控接口（支持使用类自定义的健康响应消息）
+GET http://localhost:8080/actuator/health
+
+### Promethus接口（添加Promethus依赖之后）
+GET http://localhost:8080/actuator/prometheus
+
+### 环境参数接口
+GET http://localhost:8080/actuator/env
+
+### /metrics 端点列出了可供跟踪的所有指标
+GET http://localhost:8080/actuator/metrics
+
+### 例如：获取 system.cpu.usage 指标的详细信息
+GET http://localhost:8080/actuator/metrics/system.cpu.usage
+
+### 例如：获取 process.files.open 指标的详细信息
+GET http://localhost:8080/actuator/metrics/process.files.open
+
+### loggers 端点显示应用程序中所有已配置的记录器及其相应日志级别的列表。
+GET http://localhost:8080/actuator/loggers
+
+### 通过在 URL 中传递名称来查看单个日志记录器的详细信息
+### http://localhost:8080/actuator/loggers/{name}.
+GET http://localhost:8080/actuator/loggers/ROOT
+
+### 允许在运行时更改应用程序中给定记录器的日志级别
+### 使用有效负载向 URL 发出 POST 请求
+POST http://localhost:8080/actuator/loggers/ROOT
+Content-Type: application/json
+
+{
+   "configuredLevel": "INFO"
+}
+

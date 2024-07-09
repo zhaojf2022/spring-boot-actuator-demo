@@ -1,30 +1,18 @@
-# Spring Boot Actuator: Health Check, Auditing, Metrics Gathering and Monitoring 
+# Spring Boot Actuator 示例 
 
-## Tutorials 
+## 教程 
 
-1. [Spring Boot Actuator: Health check, Auditing, Metrics gathering and Monitoring](https://www.callicoder.com/spring-boot-actuator/)
-2. [Spring Boot Actuator metrics monitoring with Prometheus and Grafana](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
+- [Spring Boot Actuator: Health check, Auditing, Metrics gathering and Monitoring](https://www.callicoder.com/spring-boot-actuator/)
+- [Spring Boot Actuator metrics monitoring with Prometheus and Grafana](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
 
-## Steps to Setup
+## 项目启动和测试
+- 编译并启动项目；
+- 在http目录下，使用test.http文件中的命令，执行测试，查看/actuator各个端口的返回结果；
 
-**1. Clone the application**
+## 和Promethus和Grafana整合
+- 使用Docker安装Promethus，并指定配置文件：
+`docker run -p 9090:9090 -v /Users/jianfengzhao/Sourcecode/spring/spring-boot-actuator-demo/src/main/resources/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus`
 
-```bash
-git clone https://github.com/callicoder/spring-boot-actuator-demo.git
-```
-
-**2. Build and run the app using maven**
-
-```bash
-mvn package
-java -jar target/actuator-demo-0.0.1-SNAPSHOT.jar
-```
-
-Alternatively, you can run the app directly without packaging like this -
-
-```bash
-mvn spring-boot:run
-```
 
 The app will start running at <http://localhost:8080>.
 
